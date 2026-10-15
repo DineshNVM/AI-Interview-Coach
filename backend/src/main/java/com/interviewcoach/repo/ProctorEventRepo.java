@@ -1,0 +1,1 @@
+package com.interviewcoach.repo;import com.interviewcoach.model.ProctorEvent;import org.springframework.data.jpa.repository.JpaRepository;import java.util.List;public interface ProctorEventRepo extends JpaRepository<ProctorEvent,Long>{List<ProctorEvent> findTop200ByInterviewIdOrderByOccurredAtAsc(Long id);long countByInterviewId(Long id);}

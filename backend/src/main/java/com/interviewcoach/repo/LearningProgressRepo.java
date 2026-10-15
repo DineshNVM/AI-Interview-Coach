@@ -1,0 +1,1 @@
+package com.interviewcoach.repo;import com.interviewcoach.model.LearningProgress;import org.springframework.data.jpa.repository.JpaRepository;import java.util.Optional;public interface LearningProgressRepo extends JpaRepository<LearningProgress,Long>{Optional<LearningProgress> findByUserIdAndResourceId(Long id,String resourceId);}

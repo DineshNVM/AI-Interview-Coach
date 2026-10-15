@@ -1,0 +1,2 @@
+package com.interviewcoach.api;import org.springframework.security.core.context.SecurityContextHolder;import org.springframework.http.HttpStatus;import org.springframework.web.server.ResponseStatusException;
+public class ApiSupport {public static Long uid(){Object p=SecurityContextHolder.getContext().getAuthentication().getPrincipal();if(p instanceof Long id)return id;throw new ResponseStatusException(HttpStatus.UNAUTHORIZED,"Login required");}}

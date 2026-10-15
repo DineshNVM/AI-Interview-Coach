@@ -1,0 +1,1 @@
+package com.interviewcoach.repo;import com.interviewcoach.model.Answer;import org.springframework.data.jpa.repository.JpaRepository;import java.util.List;public interface AnswerRepo extends JpaRepository<Answer,Long>{List<Answer> findByInterviewIdOrderByPositionAsc(Long id);long countByInterviewId(Long id);}

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+target/
+private-uploads/
+.env
+.env.*
+!.env.example
+*.log
+.idea/
+.vscode/
+.DS_Store

@@ -1,0 +1,1 @@
+package com.interviewcoach.repo;import com.interviewcoach.model.Resume;import org.springframework.data.jpa.repository.JpaRepository;import java.util.Optional;public interface ResumeRepo extends JpaRepository<Resume,Long>{Optional<Resume> findFirstByUserIdOrderByCreatedAtDesc(Long userId);}
